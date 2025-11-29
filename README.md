@@ -123,10 +123,6 @@ POST /orders: Yeni sipariş oluşturma.
 
 PUT /orders/:orderId/status: Sipariş durumunu güncelleme (Restoran Paneli).
 
-📸 Ekran Görüntüleri
-
-(Buraya uygulamanın ekran görüntülerini ekleyebilirsin)
-
 👨‍💻 Geliştirici Notları
 
 Bu proje, modern yazılım geliştirme süreçlerinde "State Management", "Asynchronous Programming" ve "Real-Time Data Handling" konularını pekiştirmek amacıyla geliştirilmiştir.
