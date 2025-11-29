@@ -1,0 +1,25 @@
+services:
+  # 🐘 Veritabanı Servisimiz (PostgreSQL)
+  db:
+    image: postgres:15-alpine # En hafif ve stabil sürümlerden biri
+    container_name: super-app-db
+    restart: always
+    environment:
+      POSTGRES_USER: myuser       # Kullanıcı Adı
+      POSTGRES_PASSWORD: mypassword # Şifre
+      POSTGRES_DB: superappdb     # Veritabanı Adı
+    ports:
+      - "5432:5432" # Bilgisayarının 5432 portunu, konteynerinkine bağla
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Veriler silinmesin diye yedekle
+
+  # 🎛️ Yönetim Paneli (Adminer)
+  # Veritabanını tarayıcıdan görmek için
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:

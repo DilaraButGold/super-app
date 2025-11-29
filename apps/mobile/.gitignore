@@ -1,0 +1,30 @@
+# --- GENEL ---
+node_modules/
+npm-debug.log
+yarn-error.log
+.DS_Store
+.env
+.env.local
+
+# --- EXPO & REACT NATIVE ---
+.expo/
+dist/
+web-build/
+*.jks
+*.keystore
+*.pem
+
+# --- ANDROID ---
+android/app/build/
+android/.gradle/
+
+# --- IOS ---
+ios/Pods/
+ios/build/
+
+# --- DOCKER & DATABASE ---
+postgres_data/
+
+# --- IDE ---
+.vscode/
+.idea/
